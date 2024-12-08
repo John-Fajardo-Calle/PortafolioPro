@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/logos/logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortafolioPro - John Fajardo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+<header>
+    <div class="brand">
+        <img src="assets/logos/logo.png" alt="Brand Logo" class="brand-logo">
+        <span class="brand-name">PortafolioPro</span>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-switch-container">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-switch-label">
+                <div class="switch-slider">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </div>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <div class="home-content">
+            <h1>Hi, I'm John Fajardo</h1>
+            <p>
+                A passionate Backend & Frontend Developer with a background in Mechatronics Engineering. I specialize in creating practical and innovative solutions in automation, machine learning, and web development.
+            </p>
+            <button class="action-btn"><a href="#projects">Explore My Work</a></button>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Python</h3>
+                <p>Automation, AI, and backend systems.</p>
+                <a href="projects/python.html">View Projects</a>
+            </div>
+            <div class="project-card">
+                <h3>C++</h3>
+                <p>Backend systems and advanced algorithms.</p>
+                <a href="projects/cpp.html">View Projects</a>
+            </div>
+            <div class="project-card">
+                <h3>MATLAB</h3>
+                <p>Scientific simulations and data analysis.</p>
+                <a href="projects/matlab.html">View Projects</a>
+            </div>
+            <div class="project-card">
+                <h3>CSS</h3>
+                <p>Responsive and interactive web design.</p>
+                <a href="projects/css.html">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Mechatronics Engineering student passionate about integrating technology into real-world applications.
+            My expertise spans multiple domains, including backend development, web development, automation, and scientific simulations.
+        </p>
+        <div class="skills-grid">
+            <div class="skill-card" data-skill="python">
+                <span>Python</span>
+            </div>
+            <div class="skill-card" data-skill="cpp">
+                <span>C++</span>
+            </div>
+            <div class="skill-card" data-skill="matlab">
+                <span>MATLAB</span>
+            </div>
+            <div class="skill-card" data-skill="css">
+                <span>CSS</span>
+            </div>
+            <div class="skill-card" data-skill="html">
+                <span>HTML</span>
+            </div>
+            <div class="skill-card" data-skill="javascript">
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formsubmit.co/john.fajardo.calle@gmail.com" method="POST">
+            <input type="hidden" name="_subject" id="subject">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button class="action-btn" type="submit">Send Message</button>
+        </form>
+        <p>
+            <a href="https://wa.me/51932137302" class="whatsapp-link" target="_blank">Contact me on Whatsapp</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 John Fajardo. All Rights Reserved.</p>
+</footer>
+
+<div class="modal-overlay"></div>
+<div class="skill-modal">
+    <button class="close-modal-btn">X</button>
+    <div class="skill-modal-content">
+        <div class="left">
+            <img src="" alt="Skill Logo">
+            <h3></h3>
+        </div>
+        <div class="right">
+            <h4>What can I do?</h4>
+            <p class="modal-description"></p>
+            <ul class="modal-details"></ul>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay para la animación de cambio de modo -->
+<div class="theme-transition-overlay"></div>
+</body>
+</html>
