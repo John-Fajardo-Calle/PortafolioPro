@@ -1,10 +1,10 @@
 const themeToggleButton = document.getElementById('theme-switch');
 const body = document.body;
-const overlayTransition = document.querySelector('.theme-transition-overlay');
+const overlay = document.querySelector('.modal-overlay');
 
 window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme') || 'light';
-    body.className = savedTheme;
+    body.className = savedTheme; // Aplica el tema guardado
     themeToggleButton.checked = (savedTheme === 'dark');
 });
 
@@ -15,7 +15,6 @@ themeToggleButton.addEventListener('change', () => {
     localStorage.setItem('theme', newTheme);
 });
 
-// Smooth Scroll
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -115,7 +114,6 @@ const skillData = {
 };
 
 const modal = document.querySelector('.skill-modal');
-const overlay = document.querySelector('.modal-overlay');
 const closeModalBtn = document.querySelector('.close-modal-btn');
 
 document.querySelectorAll('.skill-card').forEach(card => {
